@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Login.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from "@fortawesome/free-brands-svg-icons"
 
 const Login = () => {
 
@@ -58,9 +60,10 @@ const Login = () => {
                         <button className='login-buttons' type="submit">
                             Login
                         </button>
-                        <h2 style={{marginTop:'10px'}}>Or, you can also Login with:</h2>
-                        <button onClick={ ()=>loginUserWithGoogle(navigate)} className='login-buttons' type="submit">
-                            Google
+                        <h2 style={{ marginTop: '10px' }}>Or, you can also Login with:</h2>
+                        <button onClick={() => loginUserWithGoogle(navigate)} className='login-buttons' type="submit">
+                        <FontAwesomeIcon style={{fontSize:'1.2rem', padding:'5px'}} icon={faGoogle} />
+                        
                         </button>
                         {!user?.displayName && <h3
                             style={
@@ -70,7 +73,7 @@ const Login = () => {
                         >
                             {loginMessage.slice(10, loginMessage.length)}
                         </h3>}
-                            <Button component={Link} sx={{mt:5}} to='/register' className='togglerButton'>New to this site? Register now !</Button>
+                        <Button component={Link} sx={{ mt: 5 }} to='/register' className='togglerButton'>New to this site? Register now !</Button>
                     </form>
                 </Grid>
             </Grid>

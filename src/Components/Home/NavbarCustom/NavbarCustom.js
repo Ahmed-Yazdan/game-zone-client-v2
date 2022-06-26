@@ -3,7 +3,7 @@ import "./NavbarCustom.css";
 import { Link, NavLink } from "react-router-dom";
 import useAuth from '../../../hooks/useAuth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faBars } from '@fortawesome/free-solid-svg-icons'
+  import { faBars, faArrowRightToBracket, faUser } from '@fortawesome/free-solid-svg-icons'
 
 const NavbarCustom = () => {
 
@@ -34,11 +34,11 @@ const NavbarCustom = () => {
                 {
                     user?.email ?
                         <div>
-                            <button id="logout" onClick={logOut}>Logout</button>
-                            <span style={{color:'white', margin:'0 5px', fontSize:'1.4rem'}}>{user?.displayName}</span>
+                            <button id="logout" onClick={logOut}>Logout<FontAwesomeIcon style={{marginLeft:'5px'}} icon={faArrowRightToBracket} /></button>
+                            <span style={{color:'white', margin:'0 5px', marginLeft:'15 px', fontSize:'1.1rem'}}><FontAwesomeIcon style={{marginRight:'5px'}} icon={faUser} />{user?.displayName}</span>
                         </div>
                         :
-                        <Link to="/login">Login</Link>
+                        <Link to="/login">Login<FontAwesomeIcon style={{marginLeft:'5px'}} icon={faArrowRightToBracket} /></Link>
 
                 }
                 </li>
@@ -53,4 +53,4 @@ const NavbarCustom = () => {
 export default NavbarCustom;
 
 
-// 
+// <i class="fa-solid "></i>
