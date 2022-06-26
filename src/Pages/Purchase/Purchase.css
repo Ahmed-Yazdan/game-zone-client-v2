@@ -1,0 +1,14 @@
+.purchase-button{
+    padding:10px 25px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 3px;
+    margin:10px auto;
+}
+.purchase-button:hover{
+    color: rgb(255, 255, 255);
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+}

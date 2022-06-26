@@ -1,0 +1,10 @@
+.addAdmin .addAdmin-button{
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.addAdmin .addAdmin-button:hover{
+    color: rgb(255, 255, 255);
+    border:1px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}

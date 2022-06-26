@@ -1,0 +1,12 @@
+.cart .action-buttons:hover{
+    border: 1px solid transparent;
+    background-color: black;
+    color: white;
+    
+}
+.cart .action-buttons{
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    line-height: none;
+}
