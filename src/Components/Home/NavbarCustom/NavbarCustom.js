@@ -14,10 +14,12 @@ const NavbarCustom = () => {
     const handleIcon = () => {
         if (count % 2 == 0) {
             document.getElementById("yourMom").style.left = "0";
+            document.querySelector(".nav").style.position = "fixed";
             count++
         }
         else {
             document.getElementById("yourMom").style.left = "-100%";
+            document.querySelector(".nav").style.position = "relative";
             count++
         };
     }
